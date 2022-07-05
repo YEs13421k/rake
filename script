@@ -1,6 +1,6 @@
 wait(0.01)
 game.StarterGui:SetCore("SendNotification", {
-Title = "DaWaeRake GUI"; -- the title (ofc)
+Title = "DaWaeRake GUI"; -- the title
 Text = "Made By Testerextra"; 
 Icon = "rbxassetid://10119479772"; -- the image if u want. 
 Duration = 2; -- how long the notification should in secounds
