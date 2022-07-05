@@ -1,0 +1,308 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("DaWaeRake", "BloodTheme")
+local Main = Window:NewTab("Main")
+local Main = Main:NewSection("Cheats")
+Main:NewButton("Admin", ":regen rake,:freeze rake,:fling rake,:kill rake,:fire rake", function()
+    local Player = game.Players.LocalPlayer
+
+Player.Chatted:connect(function(cht)
+    if cht:match(":freeze rake") then
+
+local args = {
+    [1] = workspace.Rake.HumanoidRootPart,
+    [2] = workspace.Rake.Humanoid,
+    [3] = 10,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").SnowballRE.DamageRE:FireServer(unpack(args))
+    end 
+end)
+Player.Chatted:connect(function(cht)
+    if cht:match(":fire rake") then
+local args = {
+    [1] = workspace.Rake.RightClaw,
+    [2] = workspace.Rake.Humanoid,
+    [3] = 50,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").PanRE.DamageRE:FireServer(unpack(args))
+    end 
+end)
+Player.Chatted:connect(function(cht)
+    if cht:match(":kill rake") then
+local args = {
+    [1] = workspace.Rake.LeftClaw,
+    [2] = workspace.Rake.Humanoid,
+    [3] = 10000,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
+   game:GetService("ReplicatedStorage").HitEvent:FireServer()
+ end 
+end)
+Player.Chatted:connect(function(cht)
+    if cht:match(":regen rake") then
+local args = {
+    [1] = workspace.Rake.LeftClaw,
+    [2] = workspace.Rake.Humanoid,
+    [3] = -10000,
+    [4] = "AAKKAKKAAKKA112121",
+    [5] = "ALALALAQAQAQ1+!'SA",
+    [6] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").TaserRE.DamageRE:FireServer(unpack(args))
+    end 
+end)
+Player.Chatted:connect(function(cht)
+    if cht:match(":fling rake") then
+local args = {
+    [1] = workspace.Rake.LeftClaw,
+    [2] = Vector3.new(18.023113250732422, 10000.453048229217529, -6.740302562713623),
+    [3] = "AAKKAKKAAKKA112121",
+    [4] = "ALALALAQAQAQ1+!'SA",
+    [5] = "TESTMQMQOQZP11A"
+}
+
+game:GetService("ReplicatedStorage").TaserRE.HitTargetRE:FireServer(unpack(args))
+
+    end 
+end)
+end)
+
+
+local Shop = Window:NewTab("Shop")
+local Shop = Shop:NewSection("ShopForFree")
+Shop:NewButton("Vitamins", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Vitamins")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Armor Vest", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Armor Vest")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Sentry", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Sentry")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Boom Hammer", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Boom")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Bat", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Bat")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Head Hunter", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Head Hunter")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Burning Pan", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Burning Pan")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Flare Gun", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Flare Gun")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Taser", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Taser")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Sniper", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Sniper")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Lego Brick", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Lego Brick")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Long Stick", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Long Stick")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Toy Tank", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Toy Tank")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Pistol", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Pistol")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Wrench", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Wrench")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Sandvich", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Sandvich")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Prototype Stun Baton", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Prototype Stun Baton")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Boom Stick", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Boom Stick")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Scout's Bat", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Scout's Bat")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Delta Ultra Violet Lamp", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Delta Ultra Violet Lamp")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Laser Gun", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Laser Gun")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Decoy", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Decoy")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("BloxyCola", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("BloxyCola")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Crowbar", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Crowbar")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("C4", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("C4")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Speed Coil", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Speed Coil")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Energy Coil", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Energy Coil")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Forcefield Coil", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Forcefield Coil")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Gravity Coil", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Gravity Coil")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+Shop:NewButton("Healing Coil", "", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.ShopGui.ShopTools:FindFirstChild("Healing Coil")
+}
+
+game:GetService("ReplicatedStorage").ShopEvents.Buy:FireServer(unpack(args))
+end)
+
+
+
+
+
+
+
+
+
+local Settings = Window:NewTab("Settings")
+local Settings = Settings:NewSection("Settings")
+Settings:NewKeybind("UIKeyBind", "", Enum.KeyCode.Z, function()
+	Library:ToggleUI()
+end)
