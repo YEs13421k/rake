@@ -1,3 +1,11 @@
+wait(0.01)
+game.StarterGui:SetCore("SendNotification", {
+Title = "DaWaeRake GUI"; -- the title (ofc)
+Text = "Made By Testerextra"; -- what the text says (ofc)
+Icon = "rbxassetid://10119479772"; -- the image if u want. 
+Duration = 2; -- how long the notification should in secounds
+})
+wait(2)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("DaWaeRake", "BloodTheme")
 local Main = Window:NewTab("Main")
